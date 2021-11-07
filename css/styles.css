@@ -1,7 +1,9 @@
-/*html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}*/
-
+}
+/*--------------------стилизация цвет-шрифт--------------------*/
 :root {
   --text-primary: #212121;
   --text-secondary: #757575;
@@ -24,13 +26,6 @@ a {
   text-decoration: none;
   font-family: Roboto, sans-serif;
   font-weight: normal;
-}
-.main-title {
-  color: var(--text-primary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
 }
 
 /* стилизация logo */
@@ -66,9 +61,8 @@ a {
 }
 
 /*Стилизация hero*/
-.hero {
+.hero-page {
   background-color: var(--background-secondary);
-  text-align: center;
 }
 .hero-title {
   color: var(--background-primary);
@@ -104,27 +98,29 @@ a {
   background-color: var(--selection);
   cursor: pointer;
 }
-
-/*стилизация text images*/
-.team-list {
-  background-color: var(--background-section);
+.main-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
   text-align: center;
+}
+/*стилизация text images*/
+.team-list-container {
+  background-color: var(--background-section);
 }
 .team-member {
   color: var(--text-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
 }
 .position-member {
   color: var(--text-secondary);
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
 }
-.features-list {
-}
+
 .item-title {
   color: var(--text-primary);
   font-weight: 700;
@@ -136,8 +132,7 @@ a {
   font-size: 14px;
   line-height: 1.7;
 }
-.prtfolio-list {
-}
+
 .pitfolio-item-title {
   color: var(--text-primary);
   font-weight: 700;
@@ -185,6 +180,94 @@ a {
 .footer-link-contact:focus {
   color: var(--selection);
 }
-footer {
+.footer-page {
   background-color: var(--background-secondary);
+}
+/*--------------------стилизация положения--------------------*/
+
+/*container header*/
+.header-page {
+  width: 1600px;
+}
+.header-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.nav-container {
+}
+.contact-container {
+}
+/*container hero*/
+.hero-page {
+  width: 1600px;
+}
+.hero-container {
+  width: 1170px;
+  height: 600px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.primary-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}
+.buttons-page {
+  width: 1600px;
+}
+.buttons-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.secondary-button {
+  height: 38px;
+  border-radius: 4px;
+}
+/*container main*/
+.features-list-page {
+  width: 1600px;
+}
+.features-list-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.doing-page {
+  width: 1600px;
+}
+.doing-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.team-list-page {
+  width: 1600px;
+}
+.team-list-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.prtfolio-list-page {
+  width: 1600px;
+}
+.prtfolio-list-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*container footer*/
+.footer-page {
+  width: 1600px;
+}
+.footer-container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }

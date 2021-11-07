@@ -13,158 +13,167 @@
   </head>
   <body>
     <!--Верхняя линия-->
-    <header>
-      <a class="logo" href="./index.html"
-        ><span class="logo-web" lang="en">Web</span
-        ><span class="logo-studio-header" lang="en">Studio</span></a
-      >
-      <nav>
-        <ul>
+    <header class="header-page">
+      <div class="header-container">
+        <a class="logo" href="./index.html"
+          ><span class="logo-web" lang="en">Web</span
+          ><span class="logo-studio-header" lang="en">Studio</span></a
+        >
+        <nav class="nav-container">
+          <ul>
+            <li>
+              <a class="nav-link" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-container">
           <li>
-            <a class="nav-link" href="./index.html">Студия</a>
+            <a class="header-link-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+            <a class="header-link-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li><a class="nav-link" href="">Контакты</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="header-link-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="header-link-contact" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!--Портфолио главный контент -->
     <main>
       <!--Шапка-->
-      <div>
-        <ul>
-          <li><button class="secondary-button" type="button">Все</button></li>
-          <li>
-            <button class="secondary-button" type="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button class="secondary-button" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="secondary-button" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="secondary-button" type="button">Маркетинг</button>
-          </li>
-        </ul>
-      </div>
-      <section>
-        <ul>
-          <li>
-            <a href="">
-              <img
-                src="./images/img4.jpg"
-                alt="Экран ноутбука с фото"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">Технокряк</h3>
-            <p class="portfolio-item-discription">Веб-сайт</p>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/img5.jpg"
-                alt="Баскетболисты с мячём"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Постер<span lang="en">Orlean vs Golden Star</span>
-            </h3>
-            <p class="portfolio-item-discription">Дизайн</p>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/img6.jpg" alt="Эмблема ресторана" width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Ресторан<span lang="en">Seafood</span>
-            </h3>
-            <p class="portfolio-item-discription">Приложение</p>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/img7.jpg" alt="Наушники" width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Проект<span lang="en">Prime</span>
-            </h3>
-            <p class="portfolio-item-discription">Маркетинг</p>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/img8.jpg"
-                alt="Две коробки с надписями"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Проект<span lang="en">Boxes</span>
-            </h3>
-            <p class="portfolio-item-discription">Приложение</p>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/img9.jpg"
-                alt="Экран монитора с страницей"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title" lang="en">
-              Inspiration has no Borders
-            </h3>
-            <p class="portfolio-item-discription">Веб-сайт</p>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/img10.jpg" alt="Открытая книга" width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Издание<span lang="en">Limited Edition</span>
-            </h3>
-            <p class="portfolio-item-discription">Дизайн</p>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/img11.jpg"
-                alt="Лейба прямоугольная фон белый"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title">
-              Проект<span lang="en">LAB</span>
-            </h3>
-            <p class="portfolio-item-discription">Маркетинг</p>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/img12.jpg"
-                alt="Руки на клавиатуре ноутбука"
-                width="370"
-            /></a>
-            <h3 class="pitfolio-item-title" lang="en">Growing Business</h3>
-            <p class="portfolio-item-discription">Приложение</p>
-          </li>
-        </ul>
+      <section class="buttons-page">
+        <div class="buttons-container">
+          <ul>
+            <li><button class="secondary-button" type="button">Все</button></li>
+            <li>
+              <button class="secondary-button" type="button">Веб-сайты</button>
+            </li>
+            <li>
+              <button class="secondary-button" type="button">Приложения</button>
+            </li>
+            <li>
+              <button class="secondary-button" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="secondary-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="prtfolio-list-page">
+        <div class="prtfolio-list-container">
+          <ul>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img4.jpg"
+                  alt="Экран ноутбука с фото"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">Технокряк</h3>
+              <p class="portfolio-item-discription">Веб-сайт</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img5.jpg"
+                  alt="Баскетболисты с мячём"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Постер<span lang="en">Orlean vs Golden Star</span>
+              </h3>
+              <p class="portfolio-item-discription">Дизайн</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img6.jpg"
+                  alt="Эмблема ресторана"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Ресторан<span lang="en">Seafood</span>
+              </h3>
+              <p class="portfolio-item-discription">Приложение</p>
+            </li>
+            <li>
+              <a href="">
+                <img src="./images/img7.jpg" alt="Наушники" width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Проект<span lang="en">Prime</span>
+              </h3>
+              <p class="portfolio-item-discription">Маркетинг</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img8.jpg"
+                  alt="Две коробки с надписями"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Проект<span lang="en">Boxes</span>
+              </h3>
+              <p class="portfolio-item-discription">Приложение</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img9.jpg"
+                  alt="Экран монитора с страницей"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title" lang="en">
+                Inspiration has no Borders
+              </h3>
+              <p class="portfolio-item-discription">Веб-сайт</p>
+            </li>
+            <li>
+              <a href="">
+                <img src="./images/img10.jpg" alt="Открытая книга" width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Издание<span lang="en">Limited Edition</span>
+              </h3>
+              <p class="portfolio-item-discription">Дизайн</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img11.jpg"
+                  alt="Лейба прямоугольная фон белый"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title">
+                Проект<span lang="en">LAB</span>
+              </h3>
+              <p class="portfolio-item-discription">Маркетинг</p>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/img12.jpg"
+                  alt="Руки на клавиатуре ноутбука"
+                  width="370"
+              /></a>
+              <h3 class="pitfolio-item-title" lang="en">Growing Business</h3>
+              <p class="portfolio-item-discription">Приложение</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Подвал контакты-->
-    <footer>
-      <div>
+    <footer class="footer-page">
+      <div class="footer-container">
         <a class="logo" href="./index.html"
           ><span class="logo-web" lang="en">Web</span
           ><span class="logo-studio-footer" lang="en">Studio</span></a
