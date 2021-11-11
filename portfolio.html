@@ -17,64 +17,70 @@
   </head>
   <body>
     <!--Верхняя линия-->
-    <header class="header-container">
-      <div class="logo-container">
-        <a class="logo" href="./index.html"
-          ><span class="logo-web" lang="en">Web</span
-          ><span class="logo-studio-header" lang="en">Studio</span></a
-        >
-      </div>
-      <div class="nav-container">
-        <nav>
+    <header class="section-header-container">
+      <div class="header-container">
+        <div class="logo-container">
+          <a class="logo" href="./index.html"
+            ><span class="logo-web" lang="en">Web</span
+            ><span class="logo-studio-header" lang="en">Studio</span></a
+          >
+        </div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li>
+                <a class="nav-link" href="./index.html">Студия</a>
+              </li>
+              <li>
+                <a class="nav-link current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li><a class="nav-link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-contact-container">
           <ul>
             <li>
-              <a class="nav-link" href="./index.html">Студия</a>
+              <a class="header-link-contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+              <a class="header-link-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li><a class="nav-link" href="">Контакты</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="contact-container">
-        <ul>
-          <li>
-            <a class="header-link-contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-link-contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!--Портфолио главный контент -->
-    <main>
+    <main class="main-container">
       <!--Шапка-->
-      <section class="buttons-section-container">
+      <section class="section-buttons-container">
         <div class="buttons-container">
           <ul>
-            <li><button class="secondary-button" type="button">Все</button></li>
             <li>
-              <button class="secondary-button" type="button">Веб-сайты</button>
+              <a class="secondary-button" type="button">Все</a>
             </li>
             <li>
-              <button class="secondary-button" type="button">Приложения</button>
+              <a class="secondary-button" type="button">Веб-сайты</a>
             </li>
             <li>
-              <button class="secondary-button" type="button">Дизайн</button>
+              <a class="secondary-button" type="button">Приложения</a>
             </li>
             <li>
-              <button class="secondary-button" type="button">Маркетинг</button>
+              <a class="secondary-button" type="button">Дизайн</a>
+            </li>
+            <li>
+              <a class="secondary-button" type="button">Маркетинг</a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="prtfolio-section-container">
+      <section class="section-prtfolio-container">
         <div class="prtfolio-list-container">
           <ul>
             <li>
@@ -180,13 +186,15 @@
       </section>
     </main>
     <!--Подвал контакты-->
-    <footer class="footer-section-container">
+    <footer class="section-footer-container">
       <div class="footer-container">
-        <a class="logo" href="./index.html"
-          ><span class="logo-web" lang="en">Web</span
-          ><span class="logo-studio-footer" lang="en">Studio</span></a
-        >
-        <address>
+        <div class="logo-container">
+          <a class="logo" href="./index.html"
+            ><span class="logo-web" lang="en">Web</span
+            ><span class="logo-studio-footer" lang="en">Studio</span></a
+          >
+        </div>
+        <address class="footer-contact-container">
           <ul>
             <li>
               <a

@@ -7,13 +7,13 @@ html {
   box-sizing: inherit;
 }
 /*Reset styles*/
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 ul {
@@ -45,7 +45,6 @@ body {
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.03em;
-  
 }
 
 a {
@@ -87,7 +86,7 @@ a {
 }
 
 /*Стилизация hero*/
-.hero-section-container {
+.section-hero-container {
   background-color: var(--background-secondary);
 }
 .hero-title {
@@ -134,7 +133,7 @@ a {
   text-align: center;
 }
 /*стилизация text images*/
-.team-section-container {
+.section-team-container {
   background-color: var(--background-section);
 }
 .team-member {
@@ -156,13 +155,11 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-  
 }
 .item-discription {
   color: var(--text-secondary);
   font-size: 14px;
   line-height: 1.7;
-  
 }
 
 .pitfolio-item-title {
@@ -212,180 +209,225 @@ a {
 .footer-link-contact:focus {
   color: var(--selection);
 }
-.footer-section-container {
+.section-footer-container {
   background-color: var(--background-secondary);
 }
 /*--------------------стилизация положения--------------------*/
 
-/*container header*/
+/*container main*/
+.main-container {
+  width: 1170px;
+  height: 1360px;
+  margin-top: 94px;
+}
 
+/*container header*/
+.section-header-container {
+  width: 1600px;
+}
 .header-container {
   width: 1230px;
   height: 80px;
   padding: 0 15px;
   margin: 0 auto;
-  
-  outline: 2px solid red;
-}
-.header-container { 
   display: flex;
-  
   align-items: center;
+  border: 2px solid #eeeeee;
 }
 .logo-container {
-  display: flex;
   margin-right: 93px;
-  
-} 
- .nav-container {
-   display: flex;
-   width: 294px;
-   margin-right: 331px;
-   
-   
- }
- .nav-container ul {
-   display: flex;
-   justify-content: space-between;
-} 
- .nav-container li {
-   margin-right: 50px;
-   
- }
-
-
-.contact-container {
-   display: flex;
-
-   
 }
-.contact-container ul {
-   display: flex;
+.nav-container {
+  width: 294px;
+  margin-right: 331px;
 }
-.contact-container li {
-  ma
+.nav-container ul {
+  display: flex;
+  justify-content: space-between;
 }
+
+.header-contact-container {
+  width: 307px;
+}
+.header-contact-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*container hero*/
-.hero-section-container {
+.section-hero-container {
+  width: 1600px;
 }
 .hero-container {
   width: 1230px;
-  padding: 0 15px;
+  height: 600px;
+  padding: 200px 15px;
   margin: 0 auto;
   text-align: center;
-
-  outline: 2px solid white;
 }
 .hero-title {
   margin-bottom: 30px;
-  
 }
 .primary-button {
   display: inline-block;
-  width: 200px;
   height: 50px;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 130px;
-  
-  
 }
-.buttons-section-container {
 
-}
-.buttons-container {
-  box-sizing: border-box;
-  width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
-  
-  outline: 2px solid red;
-}
-.buttons-container ul {
-  display: flex;
-  justify-content: center;
-  
-}
-.buttons-container li {
-  
-}
-.secondary-button {
-  border-radius: 4px;
-}
-/*container main*/
-.features-section-container {
+/*container features*/
+.section-features-container {
+  width: 1600px;
 }
 .features-list-container {
   width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
+  margin-top: 94px;
 }
 .features-list-container ul {
   display: flex;
   justify-content: space-between;
 }
 .features-list-container li {
-  
   width: 270px;
   height: 101px;
 }
+.item-title {
+  margin-bottom: 10px;
+}
 
-.doin-section-container {
+/*container doin*/
+.section-doin-container {
+  width: 1600px;
+}
+.main-title {
+  margin-top: 94px;
 }
 .doing-container {
   width: 1230px;
+  height: 386px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
+  margin-top: 94px;
 }
 .doing-img-container ul {
   display: flex;
-}
-.doing-img-container li {
-  
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.team-section-container {
+/*container team*/
+.section-team-container {
+  width: 1600px;
+}
+.team-list-container .main-title {
+  margin-top: 94px;
+  padding-top: 94px;
 }
 .team-list-container {
   width: 1230px;
+  height: 648px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
+  margin-top: 94px;
+}
+.team-img-container {
+  margin-top: 50px;
 }
 .team-list-container ul {
   display: flex;
+  justify-content: space-between;
 }
-.prtfolio-section-container {
-  width: 1230px;
-  padding: 0 15px;
+.team-list-container li {
+  width: 270px;
+  height: 378px;
+  background-color: #ffffff;
+}
+.team-member {
+  margin-top: 30px;
+}
+.position-member {
+  margin-top: 10px;
+}
+
+/*container buttons*/
+.section-buttons-container {
+  width: 1600px;
+}
+.buttons-container {
+  box-sizing: border-box;
+  width: 682px;
+  padding-bottom: 34px;
   margin: 0 auto;
-
-  outline: 2px solid red;
+}
+.buttons-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+.secondary-button {
+  display: inline-block;
+  height: 38px;
+  border-radius: 4px;
+  min-width: 130px;
+  text-align: center;
+  border-radius: 4px;
 }
 
+/*container portfolio*/
+.section-prtfolio-container {
+  width: 1600px;
+}
+.prtfolio-list-container {
+  width: 1230px;
+  height: 1360px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex-direction: row;
+  align-content: space-between;
+}
+.prtfolio-list-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .prtfolio-list-container li {
-  
-  
+  width: 370px;
+  height: 404px;
+  border: 2px solid #eeeeee;
+}
+.pitfolio-item-title {
+  width: 322px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.portfolio-item-discription {
+  width: 322px;
+  margin-top: 4px;
+  margin-left: auto;
 }
 
 /*container footer*/
-.footer-section-container ul {
-  
+.section-footer-container {
+  width: 1600px;
+  margin-top: 94px;
 }
-.footer-section-container ul {
+.section-footer-container ul {
   margin: 0;
   padding: 0;
 }
-
 .footer-container {
   width: 1230px;
-  padding: 0 15px;
+  height: 252px;
+  padding: 60px 15px;
   margin: 0 auto;
-
-  outline: 2px solid white;
+}
+.footer-contact-container {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-link-contact {
+  margin-top: 9px;
 }
