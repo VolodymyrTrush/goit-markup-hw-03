@@ -300,6 +300,11 @@ header {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
 .doing-img {
   padding-bottom: 94px;
 }
