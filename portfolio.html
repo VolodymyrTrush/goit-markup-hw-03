@@ -14,54 +14,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <title>Portfolio</title>
   </head>
   <body>
     <!--Верхняя линия-->
-    <header>
-      <div class="container">
-        <div class="header-items">
-          <div class="logo">
-            <a class="logo-items" href="./index.html"
-              ><span class="logo-web" lang="en">Web</span
-              ><span class="logo-studio-header" lang="en">Studio</span></a
-            >
-          </div>
-          <nav class="navigation">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Студия</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link current" href="./portfolio.html"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header-contact">
-            <ul class="header-contact-list">
-              <li class="header-contact-item">
-                <a class="header-link-contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="header-contact-item">
-                <a class="header-link-contact" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+    <header class="border">
+      <div class="container header-items">
+        <div class="logo">
+          <a class="logo-items" href="./index.html"
+            ><span class="logo-web" lang="en">Web</span
+            ><span class="logo-studio-header" lang="en">Studio</span></a
+          >
+        </div>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contact">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a class="contact-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <!--Портфолио главный контент -->
     <main>
       <!--Шапка-->
-      <section class="container">
-        <div class="buttons-list">
-          <ul>
+      <section class="buttons">
+        <div class="container">
+          <ul class="buttons-list">
             <li>
               <a class="secondary-button" type="button">Все</a>
             </li>
@@ -80,9 +77,9 @@
           </ul>
         </div>
       </section>
-      <section class="container">
-        <div class="prtfolio-list">
-          <ul>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="portfolio-list">
             <li class="portfolio-item">
               <a href="">
                 <img
@@ -90,8 +87,10 @@
                   alt="Экран ноутбука с фото"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title">Технокряк</h3>
-              <p class="portfolio-item-discription">Веб-сайт</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">Технокряк</h3>
+                <p class="portfolio-item-discription">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -100,10 +99,12 @@
                   alt="Баскетболисты с мячём"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Постер<span lang="en">Orlean vs Golden Star</span>
-              </h3>
-              <p class="portfolio-item-discription">Дизайн</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Постер<span lang="en">Orlean vs Golden Star</span>
+                </h3>
+                <p class="portfolio-item-discription">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -112,19 +113,23 @@
                   alt="Эмблема ресторана"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Ресторан<span lang="en">Seafood</span>
-              </h3>
-              <p class="portfolio-item-discription">Приложение</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Ресторан<span lang="en">Seafood</span>
+                </h3>
+                <p class="portfolio-item-discription">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
                 <img src="./images/img7.jpg" alt="Наушники" width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Проект<span lang="en">Prime</span>
-              </h3>
-              <p class="portfolio-item-discription">Маркетинг</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Проект<span lang="en">Prime</span>
+                </h3>
+                <p class="portfolio-item-discription">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -133,10 +138,12 @@
                   alt="Две коробки с надписями"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Проект<span lang="en">Boxes</span>
-              </h3>
-              <p class="portfolio-item-discription">Приложение</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Проект<span lang="en">Boxes</span>
+                </h3>
+                <p class="portfolio-item-discription">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -145,19 +152,23 @@
                   alt="Экран монитора с страницей"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title" lang="en">
-                Inspiration has no Borders
-              </h3>
-              <p class="portfolio-item-discription">Веб-сайт</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title" lang="en">
+                  Inspiration has no Borders
+                </h3>
+                <p class="portfolio-item-discription">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
                 <img src="./images/img10.jpg" alt="Открытая книга" width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Издание<span lang="en">Limited Edition</span>
-              </h3>
-              <p class="portfolio-item-discription">Дизайн</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Издание<span lang="en">Limited Edition</span>
+                </h3>
+                <p class="portfolio-item-discription">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -166,10 +177,12 @@
                   alt="Лейба прямоугольная фон белый"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title">
-                Проект<span lang="en">LAB</span>
-              </h3>
-              <p class="portfolio-item-discription">Маркетинг</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title">
+                  Проект<span lang="en">LAB</span>
+                </h3>
+                <p class="portfolio-item-discription">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <a href="">
@@ -178,8 +191,10 @@
                   alt="Руки на клавиатуре ноутбука"
                   width="370"
               /></a>
-              <h3 class="pitfolio-item-title" lang="en">Growing Business</h3>
-              <p class="portfolio-item-discription">Приложение</p>
+              <div class="portfolio-item-name">
+                <h3 class="portfolio-item-title" lang="en">Growing Business</h3>
+                <p class="portfolio-item-discription">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -194,8 +209,8 @@
             ><span class="logo-studio-footer" lang="en">Studio</span></a
           >
         </div>
-        <address class="footer-contact">
-          <ul>
+        <address>
+          <ul class="footer-contact">
             <li>
               <a
                 class="link-map"
@@ -206,12 +221,12 @@
               >
             </li>
             <li>
-              <a class="footer-link-contact" href="mailto:info@devstudio.com"
+              <a class="footer-contact-link" href="mailto:info@devstudio.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="footer-link-contact" href="tel:+380961111111"
+              <a class="footer-contact-link" href="tel:+380961111111"
                 >+38 099 111 11 11</a
               >
             </li>
