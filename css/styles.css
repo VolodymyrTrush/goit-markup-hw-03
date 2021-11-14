@@ -105,7 +105,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 .secondary-button {
   color: var(--text-primary);
@@ -206,7 +206,7 @@ a {
 .footer-contact-link:focus {
   color: var(--selection);
 }
-footer {
+.footer-section {
   background-color: var(--background-secondary);
 }
 /*--------------------стилизация положения--------------------*/
@@ -218,7 +218,7 @@ footer {
 }
 /*container header*/
 
-.border {
+.header-section {
   border: 2px solid #eeeeee;
 }
 .header-items {
@@ -229,7 +229,7 @@ footer {
   align-items: center;
 }
 .navigation {
-  padding-left: 93px;
+  margin-left: 93px;
 }
 .nav-list {
   display: flex;
@@ -244,13 +244,10 @@ footer {
 .nav-item:last-child {
   margin-right: 0;
 }
-.header-contact {
+.header-section .contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-.contact-list {
-  display: flex;
 }
 .contact-item {
   margin-right: 50px;
@@ -258,17 +255,15 @@ footer {
 .header-contact-item:last-child {
   margin-right: 0;
 }
+
 /*container hero*/
 
 .hero {
   padding: 200px 0;
+  text-align: center;
 }
 .hero-title {
-  text-align: center;
   margin-bottom: 30px;
-}
-.button {
-  text-align: center;
 }
 .primary-button {
   padding: 10px 32px;
@@ -316,25 +311,28 @@ footer {
 .team-item {
   background-color: #ffffff;
 }
-.team-member {
-  padding-top: 30px;
+.team-title {
+  padding: 30px 0;
 }
 .position-member {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
 }
 
 /*container buttons*/
+button {
+  border: 0;
+}
 .buttons {
   padding-top: 94px;
   padding-bottom: 37px;
 }
 .buttons-list {
   box-sizing: border-box;
-  width: 611px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.buttons-list-item:nth-child(-n + 4) {
+  margin-right: 8px;
 }
 .secondary-button {
   display: inline-block;
@@ -352,16 +350,15 @@ footer {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+.portfolio-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 .portfolio-item {
-  margin: 15px 0;
+  margin-right: 30px;
 }
-.portfolio-item:nth-child(-n + 3) {
-  margin-top: 0;
-}
-.portfolio-item:nth-child(n + 7) {
-  margin-bottom: 0;
+.portfolio-item:nth-child(3n + 3) {
+  margin-right: 0;
 }
 .portfolio-item-name {
   padding: 19px 23px;
@@ -372,12 +369,12 @@ footer {
 }
 
 /*container footer*/
-footer {
+.footer-section {
   padding: 60px 0;
 }
-.footer-contact {
+.footer-contact-list {
   margin-top: 20px;
 }
-.footer-contact-link {
+.footer-contact-item:nth-child(n + 2) {
   margin-top: 9px;
 }
