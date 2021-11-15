@@ -27,7 +27,7 @@ img {
 address {
   font-style: normal;
 }
-/*--------------------стилизация цвет-шрифт--------------------*/
+/*--------------------Stile color and font--------------------*/
 :root {
   --text-primary: #212121;
   --text-secondary: #757575;
@@ -93,8 +93,7 @@ a {
   line-height: 1.4;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 /* стилизация buttons */
@@ -128,6 +127,7 @@ a {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 50px;
 }
 /*стилизация text images*/
 .team {
@@ -209,12 +209,15 @@ a {
 .footer-section {
   background-color: var(--background-secondary);
 }
-/*--------------------стилизация положения--------------------*/
+/*--------------------Stile Flexbox--------------------*/
 
 .container {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
 }
 /*container header*/
 
@@ -223,9 +226,6 @@ a {
 }
 .header-items {
   display: flex;
-}
-.logo {
-  display: flex;
   align-items: center;
 }
 .navigation {
@@ -233,27 +233,20 @@ a {
 }
 .nav-list {
   display: flex;
-  margin: 32px 0;
-}
-.nav-item {
-  margin-right: 50px;
 }
 .nav-link {
   display: block;
+  padding: 32px 0;
 }
-.nav-item:last-child {
-  margin-right: 0;
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header-section .contact-list {
   display: flex;
-  align-items: center;
   margin-left: auto;
 }
-.contact-item {
+.contact-item:not(:last-child) {
   margin-right: 50px;
-}
-.header-contact-item:last-child {
-  margin-right: 0;
 }
 
 /*container hero*/
@@ -262,9 +255,7 @@ a {
   padding: 200px 0;
   text-align: center;
 }
-.hero-title {
-  margin-bottom: 30px;
-}
+
 .primary-button {
   padding: 10px 32px;
   border-radius: 4px;
@@ -288,12 +279,6 @@ a {
 
 /*container doin*/
 
-.doing {
-  padding-top: 94px;
-}
-.main-title {
-  margin-bottom: 50px;
-}
 .doing-img {
   display: flex;
   justify-content: space-between;
@@ -301,9 +286,6 @@ a {
 
 /*container team*/
 
-.team {
-  padding: 94px 0;
-}
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -322,8 +304,7 @@ a {
 button {
   border: 0;
 }
-.buttons {
-  padding-top: 94px;
+.buttons-filter {
   padding-bottom: 37px;
 }
 .buttons-list {
@@ -331,7 +312,7 @@ button {
   display: flex;
   justify-content: center;
 }
-.buttons-list-item:nth-child(-n + 4) {
+.buttons-list-item:not(:last-child) {
   margin-right: 8px;
 }
 .secondary-button {
@@ -344,9 +325,6 @@ button {
 
 /*container portfolio*/
 
-.portfolio {
-  padding-bottom: 94px;
-}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +338,7 @@ button {
 .portfolio-item:nth-child(3n + 3) {
   margin-right: 0;
 }
-.portfolio-item-name {
+.portfolio-item-filter {
   padding: 19px 23px;
   border: 1px solid #eeeeee;
 }
@@ -372,9 +350,9 @@ button {
 .footer-section {
   padding: 60px 0;
 }
-.footer-contact-list {
+address {
   margin-top: 20px;
 }
-.footer-contact-item:nth-child(n + 2) {
+.footer-contact-item:not(:first-child) {
   margin-top: 9px;
 }
