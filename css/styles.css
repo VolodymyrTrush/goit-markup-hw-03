@@ -3,6 +3,17 @@
 *::after {
   box-sizing: inherit;
 }
+:root {
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --accent: #2196f3;
+  --logo-primary: #000000;
+  --background-primary: #ffffff;
+  --background-secondary: #2f303a;
+  --background-section: #f5f4fa;
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+}
 /*Reset styles*/
 h1,
 h2,
@@ -28,14 +39,7 @@ address {
   font-style: normal;
 }
 /*--------------------Stile color and font--------------------*/
-:root {
-  --text-primary: #212121;
-  --text-secondary: #757575;
-  --selection: #2196f3;
-  --background-primary: #ffffff;
-  --background-secondary: #2f303a;
-  --background-section: #f5f4fa;
-}
+
 body {
   background-color: var(--background-primary);
   font-family: Roboto, sans-serif;
@@ -43,10 +47,8 @@ body {
   font-weight: normal;
   letter-spacing: 0.03em;
 }
-
 a {
   text-decoration: none;
-  font-family: Roboto, sans-serif;
   font-weight: normal;
 }
 
@@ -58,13 +60,13 @@ a {
   line-height: 1.2;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--accent);
 }
 .logo-studio-header {
-  color: #000000;
+  color: var(--logo-primary);
 }
 .logo-studio-footer {
-  color: #ffffff;
+  color: var(--background-primary);
 }
 
 /*Стилизация header links*/
@@ -79,7 +81,7 @@ a {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
-  color: var(--selection);
+  color: var(--accent);
 }
 
 /*Стилизация hero*/
@@ -99,7 +101,7 @@ a {
 /* стилизация buttons */
 .primary-button {
   color: var(--background-primary);
-  background-color: var(--selection);
+  background-color: var(--accent);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -118,7 +120,7 @@ a {
 .secondary-button:hover,
 .secondary-button:focus {
   color: var(--background-primary);
-  background-color: var(--selection);
+  background-color: var(--accent);
   cursor: pointer;
 }
 .main-title {
@@ -146,7 +148,6 @@ a {
   line-height: 1.2;
   text-align: center;
 }
-
 .item-title {
   color: var(--text-primary);
   font-weight: 700;
@@ -158,7 +159,6 @@ a {
   font-size: 14px;
   line-height: 1.7;
 }
-
 .portfolio-item-title {
   color: var(--text-primary);
   font-weight: 700;
@@ -166,13 +166,11 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .portfolio-item-discription {
   color: var(--text-secondary);
   font-size: 16px;
   line-height: 1.9;
 }
-
 /*стилизация links */
 .contact-link {
   color: var(--text-secondary);
@@ -184,10 +182,10 @@ a {
   letter-spacing: 0.02em;
 }
 .link-map {
-  color: #ffffff;
+  color: var(--background-primary);
 }
 .footer-contact-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts);
 }
 .link-map,
 .footer-contact-link {
@@ -197,14 +195,13 @@ a {
   font-size: 14px;
   line-height: 1.7;
 }
-
 .contact-link:hover,
 .contact-link:focus,
 .link-map:hover,
 .link-map:focus,
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: var(--selection);
+  color: var(--accent);
 }
 .footer-section {
   background-color: var(--background-secondary);
@@ -222,7 +219,7 @@ a {
 /*container header*/
 
 .header-section {
-  border: 2px solid #eeeeee;
+  border: 1px solid var(--border-color);
 }
 .header-items {
   display: flex;
@@ -255,7 +252,6 @@ a {
   padding: 200px 0;
   text-align: center;
 }
-
 .primary-button {
   padding: 10px 32px;
   border-radius: 4px;
@@ -291,7 +287,7 @@ a {
   justify-content: space-between;
 }
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--background-primary);
 }
 .team-title {
   padding: 30px 0;
@@ -304,13 +300,11 @@ a {
 button {
   border: 0;
 }
-.buttons-filter {
-  padding-bottom: 37px;
-}
 .buttons-list {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .buttons-list-item:not(:last-child) {
   margin-right: 8px;
@@ -320,7 +314,6 @@ button {
   height: 38px;
   padding: 6px 22px;
   border-radius: 4px;
-  min-width: 30px;
 }
 
 /*container portfolio*/
@@ -338,9 +331,10 @@ button {
 .portfolio-item:nth-child(3n + 3) {
   margin-right: 0;
 }
-.portfolio-item-filter {
+.portfolio-text-wraper {
   padding: 19px 23px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 .portfolio-item-discription {
   margin-top: 4px;
